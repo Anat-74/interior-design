@@ -229,15 +229,22 @@
    display: flex;
    align-items: center;
 
-   svg {
-      color: var(--primary-color);
-      @include adaptiveValue("font-size", 40, 22);
+   @media (max-width:$tablet){
+      justify-self: end;
+      margin-inline-start: toRem(9);
    }
 
    @media (max-width:$mobileSmall){
        justify-self: start; 
        overflow-x: auto;
+       margin-inline-start: 0;
    }
+
+   svg {
+      color: var(--primary-color);
+      @include adaptiveValue("font-size", 40, 22);
+   }
+
 
 &__items-link {
    position: relative;
@@ -246,7 +253,7 @@
    @include adaptiveValue("margin-inline-start", 12, 4);
 
    &:not(:last-child) {
-      @include adaptiveValue("margin-inline-end", 36, 16);
+      @include adaptiveValue("margin-inline-end", 36, 18);
    }
 
    @include hover {
