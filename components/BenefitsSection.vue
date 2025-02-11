@@ -41,8 +41,8 @@
 .benefits-section {
   position: relative;
   background-color: var(--secondary-bg);
-  @include adaptiveValue("padding-block-start", 80, 40);
-  @include adaptiveValue("padding-block-end", 125, 70);
+  @include adaptiveValue("padding-block-start", 80, 30);
+  @include adaptiveValue("padding-block-end", 125, 40);
   @include adaptiveValue("margin-block-end", 180, 80);
 
   &__container {
@@ -51,13 +51,13 @@
 
   &__title {
     text-align: center;
-    @include adaptiveValue("margin-block-end", 24, 14);
+    @include adaptiveValue("margin-block-end", 24, 12);
   }
 
   &__text {
     text-align: center;
     opacity: 0.6;
-    @include adaptiveValue("margin-block-end", 60, 30);
+    @include adaptiveValue("margin-block-end", 60, 22);
   }
 }
 .icons-box {
@@ -65,7 +65,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: calc(($values-gap) * 2);
-  row-gap: toRem(30);
+  @include adaptiveValue("row-gap", 30, 20);
 
   @media (max-width: $tablet) {
     grid-template-columns: 1fr;
@@ -96,9 +96,9 @@
     }
 
     svg {
-      font-size: toRem(48);
       color: var(--primary-color);
-      margin-block-end: toRem(24);
+      @include adaptiveValue("font-size", 48, 38);
+      @include adaptiveValue("margin-block-end", 24, 8);
     }
   }
 

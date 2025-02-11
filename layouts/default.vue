@@ -91,8 +91,9 @@
          </label>
          <input 
          class="top-right__input" 
-         type="text" 
+         type="email" 
          id="e-address"
+         required
          placeholder="Your email address"
          >
         <UButton
@@ -372,7 +373,7 @@ color: rgba(255, 255, 255, 0.6);
    &__logo {
    display: inline-flex;
    translate: 0 toRem(-3);
-   font-size: toRem(20);
+   font-size: toEm(20, 16);
    @include adaptiveValue("margin-inline-end", 56, 40);
 }
 
@@ -392,7 +393,7 @@ color: rgba(255, 255, 255, 0.6);
    @media (max-width:$mobile){
       display: flex;
       justify-content: space-between;
-      padding-block-start: toRem(26);
+      padding-block-start: toEm(26, 16);
      }
 
      &__link {
@@ -434,9 +435,11 @@ position: relative;
       height: 100%;
       padding-inline-start: toRem(16);
       padding-inline-end: toRem(7);
+      letter-spacing: .7px;
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-right: none;
       border-radius: toRem(4) 0 0 toRem(4);
+      color: var(--light-color);
       background-color: rgba(255, 255, 255, 0.12);
       transition: color var(--transition-duration);
 

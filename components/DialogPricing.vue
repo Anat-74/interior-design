@@ -10,7 +10,7 @@ const closeDialog = () => {
 
 onMounted(() => {
   if (dialogElement.value) {
-   const cleanup = useCloseDialogElement(dialogElement.value);
+   useCloseDialogElement(dialogElement.value);
   }
 })
 </script>

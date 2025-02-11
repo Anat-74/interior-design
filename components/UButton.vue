@@ -8,7 +8,7 @@ interface Props{
    isAccordion1Open?: boolean
    isAccordion2Open?:boolean
 }
-const props = defineProps<Props>()
+defineProps<Props>()
 
 const emit = defineEmits(['click'])
 const clickOnButton = () => {
@@ -259,17 +259,6 @@ body:has(dialog[open]) {
    @include hover {
       scale: 1.2;
       color: var(--primary-color);
-   }
-  }
-
-  &_slider-stroke {
-   text-transform: uppercase;
-   padding-inline: toRem(30);
-   border: 1px solid var(--primary-color);
-   color: var(--primary-color);
-
-   @include hover {
-      color: var(--light-color);
    }
   }
 
