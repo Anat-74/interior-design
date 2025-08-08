@@ -218,6 +218,7 @@ const setActiveSlide = (idx: any) => {
 
   &__image {
    width: 100%;
+   height: 100%;
    @media (max-width: toEm(639.98)){
       width: 85%;
    }
