@@ -179,9 +179,8 @@
 
 <style lang="scss" scoped>
 .header {
-   padding-block-start: toRem(20);
+   padding-block: toRem(20);
    background-color: var(--primary-bg);
-   @include adaptiveValue("padding-block-end", 80, 30);
 
    @media (max-width:$mobileSmall){
        padding-block-start: toRem(12); 

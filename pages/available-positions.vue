@@ -8,13 +8,21 @@ useSeoMeta({
 </script>
 
 <template>
+      <div class="available">
    <h1>
       Available Positions
    </h1>
+   </div>
 </template>
 
 <style lang="scss" scoped>
-h1 {
-   text-align: center;
+.available {
+   height: 100dvh;
+   display: flex;
+   justify-content: center;
+
+   h1 {
+      margin-block-start: toRem(82);
+   }
 }
 </style>

@@ -8,13 +8,21 @@ useSeoMeta({
 </script>
 
 <template>
+   <div class="about">
    <h1>
       page AboutUs
    </h1>
+   </div>
 </template>
 
 <style lang="scss" scoped>
-h1 {
-   text-align: center;
+.about {
+   height: 100dvh;
+   display: flex;
+   justify-content: center;
+
+   h1 {
+      margin-block-start: toRem(82);
+   }
 }
 </style>

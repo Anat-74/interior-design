@@ -41,7 +41,6 @@
             class="offer-section__image"
             src="images/offer-image.jpg"
             alt="Interior design of apartments"
-            format="webp"
             width="705"
             height="440"
             loading="lazy"

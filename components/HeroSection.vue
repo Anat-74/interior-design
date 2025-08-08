@@ -28,6 +28,7 @@
   background-color: var(--primary-bg);
   @include adaptiveValue("padding-block-end", 115, 35);
   @include adaptiveValue("margin-block-end", 120, 12);
+  @include adaptiveValue("padding-block-start", 60, 2);
 
   &::after {
     content: "";
