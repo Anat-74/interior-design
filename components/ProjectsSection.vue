@@ -54,7 +54,7 @@ const slides = [
 
 const activeSlideIdx = ref(null)
 
-const setActiveSlide = (idx) => {
+const setActiveSlide = (idx: any) => {
   if (activeSlideIdx.value === idx) {
     activeSlideIdx.value = null
   } else {
