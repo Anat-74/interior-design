@@ -48,7 +48,6 @@ export default defineNuxtConfig({
       assetsInclude: ['**/*.avif']
    },
    image: {
-      provider: 'ipx',
       quality: 85,
       densities: [1, 2]
    },
