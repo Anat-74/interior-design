@@ -45,10 +45,10 @@ onMounted(async () => {
 
 const slides = [
    { path: '/view-project-one',    idx: 1, imageUrl: "images/kids-slider-image.jpg", title: 'Kids Bedroom With Decorations', descr: 'Apartments & flats' },
-   { path: '/view-project-two',    idx: 2, imageUrl: "images/modern-slider-image.jpg", title: 'Modern Double Bedroom', descr: 'Apartments & flats' },
+   { path: '/view-project-two',    idx: 2, imageUrl: "images/scandinavian-slider-image.jpg", title: 'Modern Double Bedroom', descr: 'Apartments & flats' },
    { path: '/view-project-three', idx: 3, imageUrl: "images/scandinavian-slider-image.jpg", title: 'Scandinavian Style Interior', descr: 'Private houses' },
    { path: '/view-project-one',    idx: 4, imageUrl: "images/kids-slider-image.jpg", title: 'Kids Bedroom With Decorations', descr: 'Apartments & flats' },
-   { path: '/view-project-two',    idx: 5, imageUrl: "images/modern-slider-image.jpg", title: 'Modern Double Bedroom', descr: 'Apartments & flats' },
+   { path: '/view-project-two',    idx: 5, imageUrl: "images/scandinavian-slider-image.jpg", title: 'Modern Double Bedroom', descr: 'Apartments & flats' },
    { path: '/view-project-three', idx :6, imageUrl: "images/scandinavian-slider-image.jpg", title: 'Scandinavian Style Interior', descr: 'Private houses' }
 ]
 
@@ -99,7 +99,6 @@ const setActiveSlide = (idx: any) => {
                class="projects-section__image"
                :src="slide.imageUrl"
                :alt="slide.title"
-               format="webp"
                width="390"
                height="345"
                loading="lazy"
@@ -218,7 +217,6 @@ const setActiveSlide = (idx: any) => {
 
   &__image {
    width: 100%;
-   height: 100%;
    @media (max-width: toEm(639.98)){
       width: 85%;
    }
